@@ -173,3 +173,6 @@ inline void fasthash64_test ( const void * key, int len, uint32_t seed, void * o
   *(uint64_t*)out = fasthash64(key, (size_t) len, (uint64_t)seed);
 }
 #endif
+
+//-----------------------------------------------------------------------------
+void mum_hash_test          ( const void * key, int len, uint32_t seed, void * out );

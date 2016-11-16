@@ -118,6 +118,7 @@ add_library(
   ${METROCRC64_SRC} 
   ${METROCRC128_SRC}
   ${SSE4_OBJ}
+  mum.cc
 )
 
 add_executable(
