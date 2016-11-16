@@ -14,3 +14,27 @@ The SMHasher suite also includes [MurmurHash3](https://github.com/aappleby/smhas
 Woo, we're on Github! I've been putting off the migration for a few, uh, years or so, but hopefully Github won't be shutting down any time soon so I don't have to move things again. MurmurHash is still used all over the place, SMHasher is still the defacto hash function test suite, and there are all sorts of interesting new hash functions out there that improve bulk hashing speed and use new shiny hardware instructions for AES and whatnot. Interesting times. :)
 
 I've copied the few wiki pages from code.google.com/p/smhasher to this wiki, though I haven't reformatted them to Markdown yet. The MurmurHash page on Wikipedia should also be linking here now as well. Feel free to send me pull requests.
+
+********************************************************************************
+
+t1ha
+=========================================
+Fast Positive Hash, aka "Позитивный Хэш"
+by [Positive Technologies](https://www.ptsecurity.ru)
+
+
+### Briefly, it is a 64-bit Hash Function:
+  1. For 64-bit platforms, in predominantly for x86_64.
+  2. 5-10% faster than City64 from Google:
+      - with approximately the same quality,
+      - but has bit more regular structure and less code size.
+  3. Not suitable for cryptography.
+
+
+Please see [t1ha.cc](t1ha.cc#L96) for implementation details.
+
+
+### ACKNOWLEDGEMENT:
+The **t1ha** was originally developed by Leonid Yuriev for The 1Hippeus project.
+
+_1Hippeus_ - zerocopy messaging in the spirit of Sparta!
