@@ -74,7 +74,7 @@ HashInfo g_hashes[] =
   { BadHash,     	  32, 0xAB432E23, "BadHash", 	 "very simple XOR shift" },
   { sumhash,     	  32, 0x0000A9AC, "sumhash", 	 "sum all bytes" },
   { sumhash32,     	  32, 0xF5562C80, "sumhash32",   "sum all 32bit words" },
-  
+
   // here start the real hashes
   { crc32,                32, 0x3719DB20, "crc32",       "CRC-32 soft" },
 
@@ -160,7 +160,7 @@ HashInfo g_hashes[] =
 #if 0
   { xxhash256_test,       64, 0x024B7CF4, "xxhash256",   "xxhash256, 64-bit unportable" },
 #endif
-#endif  
+#endif
   #if defined(__x86_64__)
   { metrohash64_1_test,       64, 0xEE88F7D2, "metrohash64_1",     "MetroHash64_1 for 64-bit" },
   { metrohash64_2_test,       64, 0xE1FC7C6E, "metrohash64_2",     "MetroHash64_2 for 64-bit" },
@@ -181,7 +181,8 @@ HashInfo g_hashes[] =
 #if defined(__SSE4_2__) && defined(__x86_64__)
   { falkhash_test_cxx,          64, 0x2F99B071, "falkhash",          "falkhash.asm with aesenc, 64-bit for x64" },
 #endif
-  { t1ha_test,            64, 0x49F33A1B, "t1ha",        "Fast Positive Hash (The 1Hippeus project)" },
+  { t1ha_test,                  64, 0x49F33A1B, "t1ha",        "Fast Positive Hash (The 1Hippeus project)" },
+  { mum_hash_test,              64, 0x3EEAE2D4, "MUM",         "https://github.com/vnmakarov/mum-hash" },
 };
 
 HashInfo * findHash ( const char * name )

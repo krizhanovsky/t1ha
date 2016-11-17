@@ -182,3 +182,5 @@ inline void t1ha_test(const void * key, int len, uint32_t seed, void * out)
 {
   *(uint64_t*)out = t1ha(key, len, seed);
 }
+
+void mum_hash_test(const void * key, int len, uint32_t seed, void * out);

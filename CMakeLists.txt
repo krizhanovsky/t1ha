@@ -95,7 +95,7 @@ add_library(
   DifferentialTest.cpp
   Hashes.cpp
   ${SSE2_SRC}
-  ${SSE4_SRC} 
+  ${SSE4_SRC}
   ${SSE4_SRC1}
   KeysetTest.cpp
   lookup3.cpp
@@ -115,10 +115,11 @@ add_library(
   Types.cpp
   PMurHash.c
   ${X64ONLY_SRC}
-  ${METROCRC64_SRC} 
+  ${METROCRC64_SRC}
   ${METROCRC128_SRC}
   ${SSE4_OBJ}
   t1ha.cc
+  mum.cc
 )
 
 add_executable(
